@@ -50,7 +50,7 @@ agro_submissions = subreddit.search(scope_query, sort='hot', limit=20)
 
 submissions = []
 for submission in agro_submissions:
-  submission = {
+  submission_dict = {
   "submission_id": submission.id,
   "title": submission.title,
   "text": submission.selftext,
@@ -59,10 +59,19 @@ for submission in agro_submissions:
   "date": datetime.datetime.utcfromtimestamp(submission.created).strftime("%d/%m/%Y, %H:%M:%S"),
   "author":  submission.author_fullname,
   "author_id":submission.author.id if hasattr(submission.author, 'id') else None,
-  "author_name":  submission.author.name
+  "author_name":  submission.author.name,
   }
-  submissions.append(submission)
+  comments = []
+  for comment in submission.comments:
+    try:
+      comment = comment.body
+      comments.append(comment)
+    except:
+      pass
+  submission_dict['comments']=comments
+  #"comment": [comment.body for comment in submission.comments]
+  submissions.append(submission_dict)
 
 submissions_df = pd.DataFrame(submissions)
 
-#submissions_df.to_csv("data.csv")
+submissions_df.to_csv("data/data1.csv", index=False)

@@ -1,0 +1,30 @@
+{
+  "title": "L'UE recule sur la réduction des pesticides : les agriculteurs en colère",
+  "comments": [
+    {
+      "comment": "Oh ben ça alors. Au moins l'agrobusiness va pouvoir continuer à empoisonner les sols et les nappes phréatiques en toute impunité.",
+      "sentiment": "négatif",
+      "argument": ["empoisonnement des sols", "empoisonnement des nappes phréatiques"]
+    },
+    {
+      "comment": "1/10. Je bosse au service info (architecte / devops) d'une grosse boîte de l'agroalimentaire. Je peux vous dire que les agriculteurs sont les derniers de nos soucis. On préfère investir dans des projets de R&D pour améliorer nos produits et nos processus.",
+      "sentiment": "négatif",
+      "argument": ["manque d'intérêt pour les agriculteurs", "priorité à la R&D"]
+    },
+    {
+      "comment": "Sans blague ? Je suis très étonné.",
+      "sentiment": "neutre",
+      "argument": []
+    },
+    {
+      "comment": "M. Tchekov, en tant que ministre de l'intérieur, vous devriez vous occuper des problèmes de sécurité plutôt que de vous mêler des affaires agricoles.",
+      "sentiment": "négatif",
+      "argument": ["manque de priorité sur la sécurité", "ingérence dans les affaires agricoles"]
+    },
+    {
+      "comment": "Je ne reconnais plus personne, en Massey Ferguson ou en John Deere.",
+...
+      "argument": []
+    }
+  ]
+}
